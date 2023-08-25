@@ -6,10 +6,13 @@ module.exports = async (req, res) => {
 
     if (!email || !password) return res.status(400).send("faltan datos buey");
 
-     await User.findOrCreate({ where: { email, password } });
+    const users = await User.findAll({ were: { email, password } });
 
-    return res.json({access1:true});
+    if (!users) return res.status(404).send("usuario no encontrado");
+
+    return  res.json(users)
+     
   } catch (error) {
-    return res.status(500).send(error.message);
+    return res.status(500).json(error.message);
   }
 };
