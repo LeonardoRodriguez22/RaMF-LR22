@@ -7,6 +7,7 @@ import About from "./components/About/About";
 import Detail from "./components/Detail/Detail";
 import Forms from "./components/Forms/Forms";
 import Favorites from "./components/Favorites/Favorites";
+import Registro from "./components/Registro/registro.jsx";
 
 function App() {
   const [characters, setCharacters] = useState([]);
@@ -19,7 +20,7 @@ function App() {
     try {
       const { email, password } = userData;
       const URL = "http://localhost:3001/rickandmorty/login";
-      const { data } = await axios(
+      const { data } = await axios.get(
         URL + `?email=${email}&password=${password}`
       );
       const { access } = data;
@@ -65,10 +66,11 @@ function App() {
 
   return (
     <div>
-      {pathname !== "/" && pathname !== "/about" && (
+      {pathname !== "/" && pathname !== "/about" &&  pathname !== "/registro" && (
         <NavBar onSearch={onSearch} setAccess={setAccess} />
       )}
       <Routes>
+        <Route path="registro" element={<Registro />}/>
         <Route path="/" element={<Forms login={login} />} />
         <Route
           path="/home"

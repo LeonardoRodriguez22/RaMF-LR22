@@ -1,10 +1,10 @@
 .contForm {
   margin-top: 20%;
   padding: 80px;
-  display: flex;
+  display: flexrow;
   align-items: center;
   justify-content: space-between;
-  background-image: url("https://i.pinimg.com/originals/29/bd/26/29bd261d201e956588ee777d37d26800.gif");
+ 
 }
 
 .label {
@@ -60,4 +60,16 @@
   color: red;
   text-align: center;
   font-size: 1.5em;
+}
+
+.btnHome{
+  display: block;
+  margin: auto;
+  background-color:rgb(7, 8, 8);
+  color: rgb(251, 244, 244);
+}
+.btnHome:hover {
+  box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px,
+    rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+  transform: scale(1.01);
 }

@@ -1,0 +1,84 @@
+.contForm {
+    margin-top: 20%;
+    padding: 80px;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  
+  .label {
+    margin-right: 0.5rem;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(238, 238, 247);
+    box-shadow: rgb(175, 14, 103) -2px -2px 0px 2px;
+  }
+  
+  .input {
+    padding: 6px 6px;
+    background: rgb(31, 32, 35);
+    border: 1px solid rgb(60, 63, 68);
+    border-radius: 4px;
+    font-size: 13px;
+    color: rgb(247, 248, 248);
+    height: 15px;
+    appearance: none;
+    transition: border 0.15s ease 0s;
+    :focus {
+      outline: none;
+      box-shadow: none;
+      border-color: rgb(100, 153, 255);
+    }
+  }
+  
+  .btnSubmit {
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    color: #000;
+    background: #fff;
+    line-height: 30px;
+    border-radius: 40px;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px,
+      rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+    transition: all 0.2s;
+  }
+  .btnSubmit:hover {
+    box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px,
+      rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+    transform: scale(1.01);
+  }
+  
+  .parrafoError {
+    color: red;
+    text-align: center;
+    font-size: 1.5em;
+  }
+  
+
+  .btn {
+    display: flex;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: rgb(196, 60, 89);
+    font-style: italic;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .btn:hover {
+    opacity: 0.7;
+    transition: 1s;
+    border-radius: 7px;
+    background-color: aqua;
+    box-shadow: 15px 15px 15px 15px #201e1e;
+  }
+  

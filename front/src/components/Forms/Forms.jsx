@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Validations from "../Validations/validations";
 import style from "./Forms.module.css";
+import { NavLink, useNavigate } from "react-router-dom";
 
 const Forms = ({ login }) => {
   const [userData, setUserData] = useState({
@@ -66,6 +67,9 @@ const Forms = ({ login }) => {
         >
           Submit
         </button>
+        <NavLink to="/registro">
+        <button className={style.btnHome}>si no tenes cuenta registrate aqui</button>
+      </NavLink>
       </form>
     </div>
   );
