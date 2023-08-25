@@ -1,0 +1,6 @@
+body {
+  display: flex-row;
+  background-image: url("https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2J6cmdsN2RycWc5bHYxY2FkZm45bnJqYnlwaTA3b2VjeG04ZzNkMCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/kbRb4eyCNC0aMz5x68/source.gif");
+  background-size: 100%;
+  image-rendering: pixelated;
+}

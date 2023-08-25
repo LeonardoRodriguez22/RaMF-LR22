@@ -1,0 +1,16 @@
+.divFav {
+  display: flex;
+  margin-top: auto;
+}
+.btnSelect {
+  display: flex;
+  border-radius: 30%;
+  width: fit-content;
+  align-items: center;
+  background-color: rgb(1, 1, 15);
+  color: rgb(86, 141, 5);
+  width: 80px;
+  height: 50px;
+  margin: auto;
+  margin-top: 250px;
+}
